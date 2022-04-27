@@ -63,7 +63,7 @@ enum Gender {
     female
 }
 
-let i: {name: string, gender: Gender}
+let i: { name: string, gender: Gender }
 
 i = {
     name: 'lee',
@@ -74,11 +74,11 @@ console.log(i.gender === Gender.male)
 
 
 // & 多用于 连接两个对象， 语义化
-let j: {name: string} & {gender: Gender}  // 此处的j和i的区别：本质无区别， 但写法上，j可以看成两个对象的和集
+let j: { name: string } & { gender: Gender }  // 此处的j和i的区别：本质无区别， 但写法上，j可以看成两个对象的和集
 
 
 // 类型的别名
-type myType = 1 | 2 | 3| 4| 5
+type myType = 1 | 2 | 3 | 4 | 5
 let k: myType
 let l: myType
 
