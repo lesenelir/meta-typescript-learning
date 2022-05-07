@@ -1,2 +1,2 @@
-console.log('Hello Tsc')
+// console.log('Hello Tsc')
 

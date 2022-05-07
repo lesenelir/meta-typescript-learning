@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    // module用来指定模块化的规范 "es6 / es2015" "commonjs" "amd"
+    "module": "commonjs",
+    // 用来指定ts编译为es的版本
+    "target": "es5",
+    "sourceMap": true
+  },
+  "exclude": [
+    "node_modules"
+  ],
+  "outDir": [
+    "./dist"
+  ]
+}
