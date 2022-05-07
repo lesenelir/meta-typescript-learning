@@ -1,28 +1,28 @@
 // 1. 字面量进行类型声明
-let a: 10
-a = 10
+let a3: 10
+a3 = 10
 // a = 11 // 报错
 
 // 字面量进行类型声明通常和 ｜ 使用
-let b: 'male' | 'female'
-b = 'male'
-b = 'female'
+let b3: 'male' | 'female'
+b3 = 'male'
+b3 = 'female'
 
 
-let c: number | string // c既可以是number类型也可以是string类型
-c = 1
-c = 'true'
+let c3: number | string // c既可以是number类型也可以是string类型
+c3 = 1
+c3 = 'true'
 
 
 // 2. any 任意类型
 // 一个变量设置了any后，相当于对该变量关闭了类型的检测
-let d: any
+let d3: any
 // let d  // 隐式any ： 不指定类型，则TS解析器会自动判断变量的类型为any
-d = 1
-d = '123'
-let dd: number
-dd = d
-console.log(typeof dd)  // string
+d3 = 1
+d3 = '123'
+let dd3: number
+dd3 = d3
+console.log(typeof dd3)  // string
 // Note: any的类型可以修改给其他变量的类型
 
 

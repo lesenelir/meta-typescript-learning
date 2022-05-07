@@ -1,29 +1,29 @@
 // object 开发中一般不用
-let a: object
+let a4: object
 
 // {} 用来追定对象中可以包含哪些属性
 // 语法： {属性名: 属性值}
 // ? 表示可选属性
-let b: { name: string, age?: number }
+let b4: { name: string, age?: number }
 
-b = {name: 'ss'}
+b4 = {name: 'ss'}
 
 
 // 任意字符串的属性名
 // [propName: string]: any  任意属性
 // c对象中一定要有name属性，其他属性可以随便设置
-let c: { name: string, [propName: string]: any }
-c = {name: 'lee', a: 1, b: 2}
-console.log(c)
+let c4: { name: string, [propName: string]: any }
+c4 = {name: 'lee', a: 1, b: 2}
+console.log(c4)
 
 // 参数a b 是number 返回值也是number
 /**
  * 设置函数的类型声明：
  *      语法： (形参: 类型, 形参: 类型) => 返回值类型
  */
-let d: (a: number, b: number) => number
+let d4: (a: number, b: number) => number
 
-d = function (n1, n2) {
+d4 = function (n1, n2) {
     return n1 + n2
 }
 
@@ -33,13 +33,13 @@ d = function (n1, n2) {
  *      Array<类型>
  */
 
-let e: string[] // 字符串数组
-e = ['1', '2', '3']
+let e4: string[] // 字符串数组
+e4 = ['1', '2', '3']
 
-let f: number[]
-f = [1, 2]
+let f4: number[]
+f4 = [1, 2]
 
-let g: Array<number>
+let g4: Array<number>
 
 
 /**
@@ -48,7 +48,7 @@ let g: Array<number>
  *   语法： [类型, 类型, ...] // 想要几个元祖的长度就设置几个元素
  */
 
-let h: [string, string]
+let h4: [string, string]
 // h = ['123', '123', '123'] // 报错 多余两个长度
 
 
