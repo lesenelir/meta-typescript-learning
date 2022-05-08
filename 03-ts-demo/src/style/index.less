@@ -1,5 +1,72 @@
+// 设置变量
+@bg-color: #ccc;
 
-#myDiv {
-  color: red;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font: bold 15px "Courier";
+}
+
+#main {
+  width: 360px;
+  height: 420px;
+  background-color: @bg-color;
+  margin: 100px auto;
+  border: 8px solid #000;
+  border-radius: 40px;
+
   display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  #stage {
+    position: relative;
+    width: 304px;
+    height: 304px;
+    border: 2px solid #000;
+
+    #snake {
+      & > div {
+        // 蛇会移动所以要开启绝对定位
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        background-color: #000;
+        border: 1px solid @bg-color;
+      }
+    }
+
+    #food {
+      position: absolute;
+      left: 40px;
+      top: 100px;
+      width: 10px;
+      height: 10px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      // 当有换行时 使用align-content
+      align-content: space-between;
+
+      & > div {
+        width: 4px;
+        height: 4px;
+        background-color: brown;
+      }
+
+    }
+  }
+
+  #score-panel {
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
