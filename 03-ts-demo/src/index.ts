@@ -1,4 +1,6 @@
 // 引入样式
 import './style/index.less'
 
-console.log(123)
+import GameControl from "./modules/GameControl";
+
+new GameControl()
