@@ -13,9 +13,9 @@
     }
 
     class Dog extends Animal {
-        age : number
+        age: number
 
-        constructor(name: string, age : number) {
+        constructor(name: string, age: number) {
             // 子类的构造函数一定要通过super()调用父类的构造函数
             super(name);
             this.age = age

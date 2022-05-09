@@ -20,20 +20,21 @@
         gender: string
     }
 
-    const obj : myInterface = {
+    const obj: myInterface = {
         name: 'ss',
-        age : 18,
+        age: 18,
         gender: 'male'
     }
 
     // 接口可以在定义类的时候去限制类的结构
     interface myInter {
         name: string
+
         sayHello(): void
     }
 
     // 实现接口： 创建类满足接口要求
-    class MyClass implements myInter{
+    class MyClass implements myInter {
         name: string;
 
         constructor(name: string) {

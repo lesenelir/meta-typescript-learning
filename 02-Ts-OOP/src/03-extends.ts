@@ -36,6 +36,7 @@
         run() {
             console.log(this.name + ' running')  // 此处的this 代表子类的实例对象
         }
+
         // Note： 不管继承不继承，TS中this永远指代该类的实例
     }
 

@@ -18,12 +18,13 @@
         console.log(b)
         return a
     }
+
     fn2<number, string>(123, 'hello2')
 
     console.log("======================================")
 
     interface Inter {
-        length : number
+        length: number
     }
 
     function fn3<T extends Inter>(a: T): number {

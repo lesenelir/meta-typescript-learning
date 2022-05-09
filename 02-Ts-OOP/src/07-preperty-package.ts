@@ -10,7 +10,7 @@
 
     class Person {
         public _name: string
-        private _age : number
+        private _age: number
 
         constructor(name: string, age: number) {
             this._name = name
@@ -63,7 +63,7 @@
         }
 
         set name(val: string) {
-            this._name  = val
+            this._name = val
         }
 
     }
